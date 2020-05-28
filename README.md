@@ -20,7 +20,9 @@ I used as a loss function the keras built in SparseCategoricalCrossentropy which
 ## Training, Testing data
 The Cropped_Images is identical cope of Images dircetory for Train and Test subfolder, but after running the source code which will contain only the faces cropped of the images.
 In the Images Directory we'll have the sets as follows:
+
 Images
+
 	Train
 		donald_trump
 			donald_1.jpg
