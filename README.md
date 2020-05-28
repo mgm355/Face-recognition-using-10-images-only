@@ -13,6 +13,34 @@ J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]
 •	yi is the true label, (integer not cross entropy)
 •	yi is the predicted label
 
+## Training, Testing data
+The Cropped_Images is identical cope of Images dircetory for Train and Test subfolder, but after running the source code which will contain only the faces cropped of the images.
+In the Images Directory we'll have the sets as follows:
+Images
+	Train
+		donald_trump
+			donald_1.jpg
+			donald_2.jpg...
+
+		marcel_ghanem
+			marcel_1.jpg
+			marcel_2.jpg...
+	Test
+		donald_trump
+			donald_1.jpg
+			donald_2.jpg
+		marcel_ghanem
+			marcel_1.jpg
+			marcel_2.jpg
+
+Each of Train and Test folders should have 11 subfolder
+For the Train; each subfolder should be named as <firstname>_<lastname> containing 10 picture. Each picture inside this subfolder should be named as <firstname>_<index>.jpg where index between 1 and 10.
+For the Test each subfolder should be named as <firstname>_<lastname> containing 2 pictures. Each picture inside this subfolder should be named as <firstname>_<index>.jpg where index is just 1 or 2.
+In Addition, we'll have folder named Mixed_Pics that contains multiple persons in same picture just for demonstration at the end.
+
+Note: you can convert all your images to jpg using single bash command from imagemagick for simplicity:
+>> mogrify -format jpg \*.*
+
 ## Data Splits:
 Based on Andrew Ng tutorials, the splitting is highly dependent on the size of data, so in this task, I used a validation/ train split equals to 0.2 where I only have 110 training images which is relatively small, so validating over 20% of the data to ensure good standing in the learning process. Will be good for this amount of data.
 
