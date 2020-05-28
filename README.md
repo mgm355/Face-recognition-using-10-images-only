@@ -9,7 +9,7 @@ Also, I’ll use a tool (face_recognition library) to crop the people faces so t
 ## Loss Function:
 I used as a loss function the keras built in SparseCategoricalCrossentropy which computes the categorical cross entropy loss. Where the loss function is defined as:
 
- ![J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]](/images/eq.png)
+ ![J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]](/images/eq.jpg)
 
 •	w refer to the model parameters, e.g. weights of the neural network
 
