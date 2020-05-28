@@ -51,7 +51,7 @@ Based on Andrew Ng tutorials, the splitting is highly dependent on the size of d
 ## Learning Graph:
  ![Learning graph](/images/graph.png)
 - Convergance, bias and variance:
-The model converges starting to reach good convergance after the second 5 epochs. According to our lecture notes, since the training curve is still good for our variance and not it’s not high and relatively low, and since the training error is reaching very low losses at the end of training, that indicates the bias is not high as well and is relatively low. Therefore we can say we are on the safe side according to the table shown in the lectures where dev same as train in addition we have low training error  Low Bias, Low Variance.
+The model converges starting to reach good convergance after the second 5 epochs. Since the training curve is still good for our variance and not it’s not high and relatively low, and since the training error is reaching very low losses at the end of training, that indicates the bias is not high as well and is relatively low. Therefore we can say we are on the safe side according to the table shown in the lectures where dev same as train in addition we have low training error  Low Bias, Low Variance.
 
 
 ## Confusion metrix
