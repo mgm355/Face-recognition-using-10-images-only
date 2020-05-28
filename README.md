@@ -1,6 +1,6 @@
 # Face-recognition-using-10-images-only
 
-![recognizing trump and merekel](/images/ex.jpg)
+![recognizing trump and merekel](/images/ex.png)
 
 ## VGG Architecture and Algorithm:
 VGG, Visual Geometry Group Convolution network, is the next step after the revolutionary AlexNet. VGG consists of much fewer parameters than Alexnet while still having more accuracy in the ImageNet competition.The focus of VGG was mainly on the depth and its effect on the accuracy on image recognition tasks. It uses very small convolution filters (3x3) and deep layers set to 16-19  [1]. In this project I used the 16 layers or what we refer as VGG16. VGG also have 5 Maxpooling layers of dimensions (2,2) , fixed zero padding (1,1), and relu activations among its layers. It also has dropout set to 0.5 between its layers to perform regularization.
