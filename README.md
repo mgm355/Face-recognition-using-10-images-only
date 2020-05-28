@@ -8,9 +8,13 @@ I’ll first make use of previously trained VGG 16 so that I ensure it have alre
 Also, I’ll use a tool (face_recognition library) to crop the people faces so that I guarantee I’ll learn exactly what I want in this few dataset available.
 ## Loss Function:
 I used as a loss function the keras built in SparseCategoricalCrossentropy which computes the categorical cross entropy loss. Where the loss function is defined as:
-J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]
+
+ ![J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]](/images/eq.png)
+
 •	w refer to the model parameters, e.g. weights of the neural network
+
 •	yi is the true label, (integer not cross entropy)
+
 •	yi is the predicted label
 
 ## Training, Testing data
