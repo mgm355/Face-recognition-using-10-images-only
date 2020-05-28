@@ -33,5 +33,6 @@ The model converges starting to reach good convergance after the second 5 epochs
 
 There are no errors according to the confusio matrixs, we are at the best case where its generelizing very good and assigning each person to his class correctly. The results was as expected on training and testing since we are very confident of the VGG16 which is extracting very well the representations we want for our classifier, were we’re getting 2622 feature (embedding for each person) that is very well pretrained and wanted to predict and is learning from it to predict only 11 classes. Moreover the usage of face croppings with some faces with smile, some being sad and some wearing eyeglasses, force the learning structure to somehow avoid overfitting to specific person pose and make it more robust.
 Some additional improvements that could be done is to increase the vary the poses of each person, their hair, front and side views, in addition to their facial expressions which might also further make our model detect the person even with more different poses or views.
-Reference:
+
+## Reference:
 [1] Simonyan, Karen & Zisserman, Andrew. (2014). Very Deep Convolutional Networks for Large-Scale Image Recognition. arXiv 1409.1556.
