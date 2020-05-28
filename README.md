@@ -17,15 +17,18 @@ J(w)=−1/N ∑i=1,N[yi log(y^i)+(1−yi)log(1−y^i)]
 Based on Andrew Ng tutorials, the splitting is highly dependent on the size of data, so in this task, I used a validation/ train split equals to 0.2 where I only have 110 training images which is relatively small, so validating over 20% of the data to ensure good standing in the learning process. Will be good for this amount of data.
 
 ## Learning Graph:
- 
+ ![Learning graph](/images/graph.png)
 - Convergance, bias and variance:
 The model converges starting to reach good convergance after the second 5 epochs. According to our lecture notes, since the training curve is still good for our variance and not it’s not high and relatively low, and since the training error is reaching very low losses at the end of training, that indicates the bias is not high as well and is relatively low. Therefore we can say we are on the safe side according to the table shown in the lectures where dev same as train in addition we have low training error  Low Bias, Low Variance.
 
 c.
-- Confusion metrix on training data:
+## Confusion metrix
+- on training data:
  
-- Confusion matrix over test data:
+ ![Learning graph](/images/matrix1.png)
  
+- on test data:
+ ![Learning graph](/images/matrix2.png)
 There are no errors according to the confusio matrixs, we are at the best case where its generelizing very good and assigning each person to his class correctly. The results was as expected on training and testing since we are very confident of the VGG16 which is extracting very well the representations we want for our classifier, were we’re getting 2622 feature (embedding for each person) that is very well pretrained and wanted to predict and is learning from it to predict only 11 classes. Moreover the usage of face croppings with some faces with smile, some being sad and some wearing eyeglasses, force the learning structure to somehow avoid overfitting to specific person pose and make it more robust.
 Some additional improvements that could be done is to increase the vary the poses of each person, their hair, front and side views, in addition to their facial expressions which might also further make our model detect the person even with more different poses or views.
 Reference:
